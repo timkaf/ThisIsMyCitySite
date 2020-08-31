@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>This Is My City</title>
+    <meta name="description" content="This is My City is a show about what cities mean to the people who live in them.">
+	<meta property="og:image" content="http://thisismycity.tv/images/timc.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles/main.css">
+<!-- 	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="m/styles_mobile.css" />
+ -->
+</head>
+<body>
+
+<!-- map layer -->
+<div id="map-area" data-bind="css: { on: selectedSide() == 'map'}">
+	<div id="gmap"></div>
+</div>
+
+<ul id="episode-media" data-bind="css: { off: selectedSide() == 'map'}" data-default-episode="ep_trailer"><!--
+
+	--><li id="ep_trailer" class="off" data-ytid="kWnNZnlZEvQ">
+
+			<div class="media"></div>
+
+			<div class="cover" data-src="images/ep_trailer_1.jpg,images/ep_trailer_2.jpg,images/ep_trailer_3.jpg,images/ep_trailer_4.jpg"></div>
+
+			<div class="play-button" data-target="ep_trailer">Play</div>
+
+			<div class="summary">
+				<h2>This is My City is a show about what cities mean to the people who live in them.</h2>
+			<div>
+
+		</div></div></li><!--
+
+	--><li id="ep_1" class="off" data-ytid="jjLXnwzqbUA">
+			<div class="media"></div>
+			<div class="cover" data-src="images/ep_1.jpg"></div>
+			<div class="play-button" data-target="ep_1">Play</div>
+			<div class="summary">
+				<h2>Lisbon</h2>
+			</div>
+
+			<div class="bios"><div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<img src="images/bio-lisbon-rita.jpg" alt="Rita Machado">
+						</td>
+						<td>
+							<p>
+								Rita Machado, a Lisbon native, has worked as a TV producer since she was seventeen but really wants to live a stress-free life on a farm. She sings along to pop music when she’s driving her tiny car skillfully around Lisbon’s narrow streets and she enjoys showing foreigners her hometown. She also likes weekend getaways to her family’s summerhouse in Sintra and she loves Lisbon’s many lookout points. Rita dislikes opportunism, arrogance, cream cheese, butter and everything else white that you can eat.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/bio-lisbon-fran.jpg" alt="Francisco Ferreira">
+						</td>
+						<td>
+							<p>
+								Francisco Ferreira is from Évora, Portugal and has lived in Lisbon since 1999 working in television and fashion. As observed by Rita, the life of Francisco is ‘party, party, party’. As observed by Francisco, there’s nothing quite like a shot or two of Jägermeister on a Friday night. Francisco likes the theater, dinner with friends and dancing the night away in one of Lisbon’s many clubs. Fran is too modest to say it but he actually knows every single person in Lisbon.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="music"><div class="wrapper">
+				<div class="close-button"></div>	
+				<table>					
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Listen</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Ode to Beug</td>
+							<td>Jackson Milas</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/ode-to-beug-jackson-milas" target="_blank">Ode to Beug</a></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Chrome</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-chrome" target="_blank">Chrome</a></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Bridge</td>
+							<td>High Highs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/bridge/id592222899?i=592223211" target="_blank">Bridge</a></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Cricket Song</td>
+							<td>Macklin Underdown</td>
+							<td><a class="bandcamp" href="http://macklinu.bandcamp.com/track/cricket-song" target="_blank">Cricket Song</a></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Pumple Track</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/oli-chang-pumple" target="_blank">Pumple Track</a></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Milan (Demo)</td>
+							<td>High Highs</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/milan-demo-high-highs" target="_blank">Milan (Demo)</a></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Show You My Way</td>
+							<td>Chrome Sparks</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/show-you-my-way/id585810112?i=585810165" target="_blank">Show You My Way</a></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>Milan (Jackson’s RMX)</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/milan-jacksons-rmx-high-highs" target="_blank">Milan (Jackson’s RMX)</a></td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>&lt;3 &amp; Soul</td>
+							<td>Chrome Sparks</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/3-soul/id585810112?i=585810159" target="_blank">&lt;3 &amp; Soul</a></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Pines</td>
+							<td>High Highs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/pines/id592222899?i=592223218" target="_blank">Pines</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="itinerary"><div class="wrapper">
+				<h3 data-bind="css: { on: selectedDay() === $element }">Friday</h3>
+				<ul>
+					<li data-geo="-9.139103,38.711029,0.000000" data-zoom="16">
+						<h4>Living Lounge Hostel</h4>
+						<div class="wrapper">
+							<p>
+								This is where we rested our weary heads in Lisbon. Great place, very central. Rooms are small but well designed with different themes. Feels more like a hotel than a hostel. A really cool place!
+							</p>
+						</div>
+					</li>
+					<li data-geo="-9.334649,38.678761,0.000000" data-zoom="13">
+						<h4>Carcavelos Beach</h4>
+						<div class="wrapper">
+							<p>
+								Dipping your head in the ocean is a good cure for jet lag. This is a dandy place to do it and just a 20-minute train ride north from Lisbon.
+							</p>
+						</div>
+					</li>
+					<li data-geo="-9.146257,38.709316,0.000000" data-zoom="16">
+						<h4>Estrela da Bica</h4>
+						<div class="wrapper">
+						<p>
+							Comfortable, cozy and relaxed restaurant near the Bairro Alto. More locals than tourists here. Bohemian vibe. Try the baba ganoush and the meatloaf!
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.150481,38.710575,0.000000" data-zoom="16">
+						<h4>Bairro Alto</h4>
+						<div class="wrapper">
+						<p>
+							Translated as ‘higher ground’, this is the elevated area of Lisbon where everyone drinks in little hole-in-the-wall bars that spill on to the street. A local landmark, it will find you if you’re out at night in Lisbon…
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.145059,38.712875,0.000000" data-zoom="16">
+						<h4>Indie Rock Cafe</h4>
+						<div class="wrapper">
+						<p>
+							A bar on a corner in Bairro Alto. Young people congregate here. Alcohol is served.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.144413,38.710953,0.000000" data-zoom="16">
+						<h4>Purex</h4>
+						<div class="wrapper">
+						<p>
+							Another bar in Bairro Alto. This bar is a gay bar. It’s on a hill. Alcohol is also served here.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.156654,38.707432,0.000000" data-zoom="16">
+						<h4>Rehab</h4>
+						<div class="wrapper">
+						<p>
+							Go to this bar at your own risk. A large, sweaty, bare-chested bartender may attempt to get you wasted by pouring whiskey down your throat.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.120704,38.714828,0.000000" data-zoom="16">
+						<h4>Lux</h4>
+						<div class="wrapper">
+						<p>
+							Once of Lisbon’s more famous clubs with two floors of music and a cool roof deck overlooking the river. If you want to dance ‘til dawn, go here. Be in the company of ladies if possible as it can be hard to get in.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Saturday</h3>
+				<ul>
+					<li data-geo="-9.138914,38.711399,0.000000" data-zoom="16">
+						<h4>Old Yellow Trams</h4>
+						<div class="wrapper">
+						<p>
+							Take one! Or take several. These trams serve Lisbon’s city center and old town and will effortlessly take you up all the winding, hilly streets. We took one from The Living Lounge Hostel to Graça.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.131394,38.716366,0.000000" data-zoom="16">
+						<h4>Miradouro da Graça</h4>
+						<div class="wrapper">
+						<p>
+							Spectacular lookout point in Graça. Soak it in while enjoying a coffee and ham n’ cheese sandwich at the outdoor café.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.127723,38.711205,0.000000">
+						<h4>Alfama</h4>
+						<div class="wrapper">
+						<p>
+							From Graça, we walked down through the neighborhood of Alfama in Lisbon’s old town. Alfama is known for its winding, hilly streets and tiny alleyways. Soak up Lisbon’s character here and keep an eye out for ‘Azulejos’, the beautiful ceramic tiles found on Portuguese building façades.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.142111,38.710644,0.000000" data-zoom="16">
+						<h4>A Brasileira</h4>
+						<div class="wrapper">
+						<p>
+							Lisbon is known for its coffee culture and this is one the oldest Cafes in town. Drink an espresso. Standing up. At the bar. Rinse. And repeat.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.141817,38.710705,0.000000" data-zoom="16">
+						<h4>Benard Gelados</h4>
+						<div class="wrapper">
+						<p>
+							Nextdoor to A Brasileira, Benard’s serves hot and deliciously dripping chocolate croissants. Perfect after a coffee or two. Put one in your belly.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.147604,38.709538,0.000000" data-zoom="15">
+						<h4>Miradouro de Santa Catarina</h4>
+						<div class="wrapper">
+						<p>
+							In Adamastor, this is another good lookout point and one ideally suiting to watching the sun go down whilst munching on a Benard Gelados chocolate croissant.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.126034,38.713078,0.000000" data-zoom="16">
+						<h4>Mesa de Frades</h4>
+						<div class="wrapper">
+						<p>
+							A little restaurant in Alfama that hosts Fado performances at midnight on Saturdays. Fado is traditional Portuguese sea-faring music. It’s a beautiful, sad kind of music about loss and love and life. Best enjoyed in the dark with locals.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.150927,38.710838,0.000000" data-zoom="16">
+						<h4>Incognito</h4>
+						<div class="wrapper">
+						<p>
+							Underground club where you can and should dance your pants off. Say hello to the door man, a true gent from Mozambique who goes by the moniker ‘D’Artagnan’.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Sunday</h3>
+				<ul>
+					<li data-geo="-9.203072,38.697460,0.000000" data-zoom="16">
+						<h4>Restaurante Os Jeronimos</h4>
+						<div class="wrapper">
+						<p>
+							Tiny little restaurant in Sintra. For breakfast we ate a local specialty called Baccalau and Ginja (salted cod and sherry wine). Yes, it was about as strange as it sounds.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.496927,38.781700,0.000000" data-zoom="13">
+						<h4>Cabo de Roca</h4>
+						<div class="wrapper">
+						<p>
+							The furthest westerly point of mainland Europe. Great lighthouse, cliffs and a little secluded beach you can walk down to. Sunsets here are breathtaking and it’s also a fine spot for a good ol’ fashioned howl at the moon. Cabo de Roca is about a 30-minute drive from Lisbon.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.144095,38.714218,0.000000" data-zoom="15">
+						<h4>Miradouro de Sao Pedro de Alcantara</h4>
+						<div class="wrapper">
+						<p>
+							Another spectacular lookout point in Lisbon. Yes there are a lot of lookout points in Lisbon. That is one of the benefits of a hilly city.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.151900,38.713917,0.000000" data-zoom="16">
+						<h4>Fox-Trot Bar</h4>
+						<div class="wrapper">
+						<p>
+							Art Deco restaurant and bar. By all accounts we had a delicious burger and a jug of sangria here.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.153630,38.707592,0.000000" data-zoom="16">
+						<h4>Left</h4>
+						<div class="wrapper">
+						<p>
+							Another hopping bar that spilled into the streets. Did we mention that in Lisbon you can drink alcohol on the streets?
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.157369,38.706245,0.000000" data-zoom="16">
+						<h4>Kremlin</h4>
+						<div class="wrapper">
+						<p>
+							A club in a cave. Spooky. This place doesn’t get going until about 5am though. So go late. Or early. Depending on how you’re looking at the day.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.156664,38.704952,0.000000" data-zoom="15">
+						<h4>Urban Beach</h4>
+						<div class="wrapper">
+						<p>
+							Sand. Umbrellas. Sexy beats. Quality dance floor.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Monday/Tuesday</h3>
+				<ul>
+					<li data-geo="-9.101490,38.444218,0.000000" data-zoom="13">
+						<h4>Sesimbra</h4>
+						<div class="wrapper">
+						<p>
+							Sea-side town about an hour’s drive from Lisbon. Lots of Lisbonites have holiday homes here and the many restaurants in town make it a seafood lover’s paradise.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.106190,38.457619,0.000000" data-zoom="13">
+						<h4>Castelo de Sesimbra</h4>
+						<div class="wrapper">
+						<p>
+							A really old 12th century castle on the hills overlooking Sesimbre. Beautiful little chapel here too.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.171363,38.678650,0.000000">
+						<h4>Cristo Rei Statue</h4>
+						<div class="wrapper">
+						<p>
+							The cardinal of Lisbon went to Rio and was like, ‘Man, they’ve got a cool statue of Jesus here, we gotta get us one of them!’ So they did. Go to the top because the view of Lisbon and the 25 de Abril Bridge is spectacular.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.381659,38.802868,0.000000" data-zoom="13">
+						<h4>Sintra</h4>
+						<div class="wrapper">
+						<p>
+							Famous town in the hills about a half hour’s drive from Lisbon. Expect more winding streets, cute cafes and good vibes.
+						</p>
+						</div>
+					</li>
+					<li data-geo="-9.396277,38.796253,0.000000">
+						<h4>Quinta de Regaleira</h4>
+						<div class="wrapper">
+						<p>
+							Impossible to pronounce, this national heritage site is great for exploring and it includes caves, turrets, water features, sculptures and stunning foliage. Definitely worth a visit.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="close-button"></div>	
+			</div></div>
+
+		</li><!--
+
+	--><li id="ep_2" class="off" data-ytid="DK5AcF5lgAA">
+			<div class="media"></div>
+			<div class="cover" data-src="images/ep_2.jpg"></div>
+			<div class="play-button" data-target="ep_2">Play</div>
+			<div class="summary">
+				<h2>Berlin</h2>
+			</div>
+
+			<div class="bios"><div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<img src="images/bio-berlin-martin.jpg" alt="Martin Guentert">
+						</td>
+						<td>
+							<p>
+								Martin Guentert (Bonn native, Berlin resident) works as a product designer for <a href="http://www.mykita.com" target="_blank">Mykita</a> Eyewear, drives a scooter around town and generally knows things…lots of things. Martin loves design and is always thinking about it. Martin also likes art, culture, history, late-night-dancing to techno in clubs, Berlin’s lakes and also its many reclaimed outdoor spaces such as <a href="http://en.wikipedia.org/wiki/Mauerpark" target="_blank">Mauerpark</a> and <a href="http://en.wikipedia.org/wiki/Teufelsberg" target="_blank">Teufelsberg</a>. Martin dislikes the water inside his car, people who always seem to be in a good mood and stupid random text on sweaters or jackets.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="music"><div class="wrapper">
+				<div class="close-button"></div>	
+				<table>					
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Listen</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Liquid Guitar</td>
+							<td>Lo Rez</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/dj-lo-rez/liquid-guitar" target="_blank">Liquid Guitar</a></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>An Aura Surrounding Part 1</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-an-aura" target="_blank">An Aura Surrounding Part 1</a></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Winter Solstice</td>
+							<td>Macklin Underdown</td>
+							<td><a class="bandcamp" href="http://macklinu.bandcamp.com/track/winter-solstice" target="_blank">Winter Solstice</a></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>YOA (The Twelves Remix)</td>
+							<td>Theater of Disco</td>
+							<td><a class="youtube" href="http://youtu.be/sLKBuqFbcF4" target="_blank">YOA (The Twelves Remix)</a></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Ivy</td>
+							<td>High Highs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/ivy/id477114889?i=477114950" target="_blank">Ivy</a></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Circles and Squares</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-circles-and" target="_blank">Circles and Squares</a></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>e Funk</td>
+							<td>Lo Rez</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/dj-lo-rez/efunk" target="_blank">e Funk</a></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>Gassenhauerno</td>
+							<td>Peer</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/peer-gassenhauerno" target="_blank">Gassenhauerno</a></td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>Helikopter</td>
+							<td>Sebastian Arnold</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/helikopter/id384228558?i=384228639" target="_blank">Helikopter</a></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Just Just</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/olichang/just-just" target="_blank">Just Just</a></td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>sevawsti</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-sevawsti" target="_blank">sevawsti</a></td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>Once Around the House</td>
+							<td>High Highs</td>
+							<td><a class="vimeo" href="https://vimeo.com/47556323" target="_blank">Once Around the House</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="itinerary"><div class="wrapper">
+				<h3 data-bind="css: { on: selectedDay() === $element }">Friday</h3>
+				<ul>
+					<li data-geo="13.380015,52.529076,0.000000" data-zoom="16">
+						<h4>MiniLoft Apartments</h4>
+						<div class="wrapper">
+							<p>
+								Located in Mitte, this is where we collapsed in Berlin. The place feels more like you’re staying in your own loft or apartment than a hotel. Décor is sparse, the architecture is wicked and you can get on the roof if you ask nicely.
+							</p>
+						</div>
+					</li>
+					<li data-geo="13.397402,52.536007,0.000000" data-zoom="13">
+						<h4>Mykita</h4>
+						<div class="wrapper">
+							<p>
+								The design/manufacturing space isn’t open to the public but if you want a pair of well-made, well-designed, handcrafted glasses that will immediately make you look more German, go to their <a href="http://www.mykita.com" target="_blank">flagship store</a> in Berlin.
+							</p>
+						</div>
+					</li>
+					<li data-geo="13.400223,52.536030,0.000000" data-zoom="16">
+						<h4>Orchideen Garten</h4>
+						<div class="wrapper">
+						<p>
+							We had Vietnamese soup here that warmed our hearts and souls. It was delicious, spicy and really cheap.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.421484,52.495499,0.000000" data-zoom="16">
+						<h4>Turkish Market</h4>
+						<div class="wrapper">
+						<p>
+							Located along the Maybach canal, this market is a chorus of deals and delicacies. Graze on fruit, vegetables, haberdashery and other local fare.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.404547,52.534084,0.000000" data-zoom="16">
+						<h4>Fra Rosa</h4>
+						<div class="wrapper">
+						<p>
+							This restaurant operates on an honor system. For 2 Euros you rent a wine glass and you can sample as much wine as you like. At the end of your meal (which was great by the way), you pay what you think is fair by dropping the coins (or preferably notes) into a giant piggybank.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.411887,52.517647,0.000000" data-zoom="16">
+						<h4>WMF Club</h4>
+						<div class="wrapper">
+						<p>
+							Once a great live music and clubbing staple, WMF is now closed. Sigh. For a revised list of clubs recommended by our host Martin that are not closed, see <a href="images/timc_berlin_martins-picks.pdf" target="_blank">here</a>.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.389534,52.525627,0.000000" data-zoom="16">
+						<h4>Late Night Donor Spot</h4>
+						<div class="wrapper">
+						<p>
+							We stumbled upon this Doner Kebab joint on our first night in Berlin, it being the nearest one to our lodgings. Despite being taken to other more famous Doner spots, this was the best one in our drunken, hungry, Doner-obsessed opinions.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Saturday</h3>
+				<ul>
+					<li data-geo="13.388681,52.521961,0.000000" data-zoom="16">
+						<h4>Berlin Spree Cruise</h4>
+						<div class="wrapper">
+						<p>
+							This Is My City normally wouldn’t set foot on a touristy boat cruise. But seeing Berlin from the river Spree is really quite relaxing and you get a nice overview of the old city center, the museums and the impressive parliament buildings. Still, it’s against our principles.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.336498,52.602535,0.000000" data-zoom="16">
+						<h4>Scooter Box (Scooter Rental)</h4>
+						<div class="wrapper">
+						<p>
+							Scooters are a really fun way of getting around a city. Bikes are also good of course but on a Scooter you can cover a lot of ground and also get to experience the local driving culture first hand.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.387725,52.493488,0.000000">
+						<h4>Curry 36</h4>
+						<div class="wrapper">
+						<p>
+							This is a good place to pick up a quintessential German ‘Currywurst mit Pommes’, which is basically a sausage or ‘Wurst’ smothered with ketchup and curry powder and served with fries.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.445442,52.502964,0.000000" data-zoom="16">
+						<h4>East Side Gallery</h4>
+						<div class="wrapper">
+						<p>
+							This is a famous part of the Berlin wall that became an international memorial for freedom in 1990. A 1.3km section of the wall, it consists of 105 paintings by artists from all over the world.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.410745,52.539757,0.000000" data-zoom="16">
+						<h4>Prater Garten</h4>
+						<div class="wrapper">
+						<p>
+							This is the oldest beer garden in Berlin. Located in Prenzlauerberg it serves traditional German food and the wheat beer flows. Copied the world over, this is the genuine article. We could have easily spent a whole day here.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.411002,52.539680,0.000000" data-zoom="15">
+						<h4>FotoAutomat</h4>
+						<div class="wrapper">
+						<p>
+							Scattered all over Berlin are outdoor photo booths. We visited one right across the street from Prater Garten. Taking FotoAutomat pictures with friends on a night out is a Berlin tradition worth taking part in.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.409972,52.541389,0.000000" data-zoom="16">
+						<h4>Dr. Pong</h4>
+						<div class="wrapper">
+						<p>
+							You should seek this place out, that’s all I’m saying. Especially if you like a) dive bars b) ping pong c) weird urban rituals d) drinking games and e) good times.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.413903,52.542809,0.000000" data-zoom="16">
+						<h4>Klub der Republik</h4>
+						<div class="wrapper">
+						<p>
+							Somewhere between a club and a bar, this place got its name from the Parliament building of the German Democratic Republic (Palast der Republik), where owners scavenged for classic GDR furnishings. It has since closed but for an updated list of currently banging clubs in Berlin, see <a href="images/timc_berlin_martins-picks.pdf" target="_blank">here</a>.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.443400,52.524529,0.000000" data-zoom="16">
+						<h4>Villa</h4>
+						<div class="wrapper">
+						<p>
+							Villa <i>was</i> a really cool club in an old abandoned mansion. Sadly it is now closed. But this is common for Berlin clubs. They open and close all the time. For an updated list of current clubs making waves in Berlin, see <a href="images/timc_berlin_martins-picks.pdf" target="_blank">here</a>.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Sunday</h3>
+				<ul>
+					<li data-geo="13.412678,52.546364,0.000000" data-zoom="16">
+						<h4>Blumencafe</h4>
+						<div class="wrapper">
+						<p>
+							This is a grand place to go for brunch on your way to the Mauerpark Flea Market. Part café and part flower shop, watch out for parrots flying around the restaurant as you eat.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.403234,52.542252,0.000000" data-zoom="16">
+						<h4>Mauerpark Flea Market</h4>
+						<div class="wrapper">
+						<p>
+							This is a beloved Berlin flea market that pops up every Sunday and has a large quantity of junk, junk-hunters and more junk. There’s also food and drinks and live music on offer.  Another graffiti-covered section of the Berlin wall is nearby and there’s a famous outdoor karaoke session that takes place here too on Sundays between 1.30pm and 5pm weather permitting.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.372470,52.543461,0.000000">
+						<h4>Stattbad</h4>
+						<div class="wrapper">
+						<p>
+							This is a good example of a reclaimed space in Berlin. An old public swimming pool, it now houses studios for artists, art shows and - if it’s not currently closed down by the police - a crazy club in the cellar set amongst the old underground water workings of the swimming pool.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.383568,52.504475,0.000000" data-zoom="16">
+						<h4>Solar Restaurant and Bar</h4>
+						<div class="wrapper">
+						<p>
+							Berlin can be fancy too. This restaurant and bar is set above Berlin’s rooftops in Kreuzberg. The red elevator that takes you up the side of the building is wicked and the food is great too. Enjoy a cocktail one floor up from the restaurant after dinner and admire the interior design and the city views.
+						</p>
+						</div>
+					</li>
+					<li data-geo="13.417408,52.499943,0.000000" data-zoom="16">
+						<h4>Möbel Olfe</h4>
+						<div class="wrapper">
+						<p>
+							This bar is a good place to end a great weekend in Berlin. At least we thought so. An old furniture shop, it has remnants of its furniture heritage glued to the walls and ceiling.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="close-button"></div>	
+			</div></div>
+
+		</li><!--
+	--><li id="ep_3" class="off" data-ytid="hg7uWrkjGL4">
+			<div class="media"></div>
+			<div class="cover" data-src="images/ep_3.jpg"></div>
+			<div class="play-button" data-target="ep_3">Play</div>
+			<div class="summary">
+				<h2>Belgrade</h2>
+			</div>
+
+			<div class="bios"><div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<img src="images/bio-belgrade-marko.jpg" alt="Marko Marovic">
+						</td>
+						<td>
+							<p>
+								Marko Marovic was born in Belgrade and has lived there for the 40 years since. A composer, performer, sound engineer and producer, Marko lives and breathes music. He is the lead singer in a band called <a href="http://www.myspace.com/inopartnersband" target="_blank">Inopartners</a>, which is a pop mix of reggae, rock and Latin punk. Marko likes old movies, vintage musical gear and concerts in small clubs. He also likes walking around Belgrade, talking politics and eating organic food. Marko’s morning routine includes Turkish coffee, freshly squeezed orange juice and a couple of drops of <a href="http://en.wikipedia.org/wiki/Propolis" target="_blank">Propolis</a> in a spoonful of sugar.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="music"><div class="wrapper">
+				<div class="close-button"></div>	
+				<table>					
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Listen</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Night Flight to Calcutta</td>
+							<td>Inopartners</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/night-flight-to-calcuta/id287186556?i=287186859" target="_blank">Night Flight to Calcutta</a></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Banalite</td>
+							<td>Inopartners</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/banalite/id287186556?i=287186618" target="_blank">Banalite</a></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Marathon</td>
+							<td>Disasterpeace</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/marathon/id505426297?i=505426301" target="_blank">Marathon</a></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Hey Love</td>
+							<td>Inoparters</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/hey-love/id387103650?i=387103661" target="_blank">Hey Love</a></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Wake Me Up From My Dream</td>
+							<td>Mono Putnik</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/mono-putnik-wake-me-up-from-my" target="_blank">Wake Me Up From My Dream</a></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Ide Voz</td>
+							<td>Direktori</td>
+							<td><a class="youtube" href="http://www.youtube.com/watch?v=KcItWxNPnG8" target="_blank">Ide Voz</a></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Ko Je Svetski Sampion</td>
+							<td>Direktori</td>
+							<td><a class="youtube" href="http://youtu.be/8mnJOI6m8Vs" target="_blank">Ko Je Svetski Sampion</a></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>To Feel</td>
+							<td>Inoparters</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/to-feel/id387103650?i=387103704" target="_blank">To Feel</a></td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>Doloresa</td>
+							<td>Inoparters</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/doloresa/id287186556?i=287186703" target="_blank">Doloresa</a></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Groovification</td>
+							<td>Inoparters</td>
+							<td><a class="youtube" href="http://youtu.be/VMOk_expE24" target="_blank">Groovification</a></td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>Boys and Girls</td>
+							<td>Inoparters</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/boys-and-girls/id387103650?i=387103689" target="_blank">Boys and Girls</a></td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>Summer Breeze</td>
+							<td>Inoparters</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/inopartners-summer-breeze-live" target="_blank">Summer Breeze</a></td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>Guide to Serenity</td>
+							<td>Inoparters</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/guide-to-serenity/id387103650?i=387103807" target="_blank">Guide to Serenity</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="itinerary"><div class="wrapper">
+				<h3 data-bind="css: { on: selectedDay() === $element }">Friday</h3>
+				<ul>
+					<li data-geo="20.464613,44.804104,0.000000" data-zoom="16">
+						<h4>Manjez</h4>
+						<div class="wrapper">
+							<p>
+								Old school Belgrade dining can be found at Manjez. The food in Serbia is heavy on the meat but it’s high quality with a great organic produce culture behind the scenes.
+							</p>
+						</div>
+					</li>
+					<li data-geo="20.444826,44.807976,0.000000" data-zoom="13">
+						<h4>Povetarac</h4>
+						<div class="wrapper">
+							<p>
+								Bar and live music venue on a boat! Say no more. Get thee to Povetarac! We recommend going on Rockabilly night but it’s likely rocking every night.
+							</p>
+						</div>
+					</li>
+					<li data-geo="20.432617,44.796776,0.000000" data-zoom="16">
+						<h4>Brodic</h4>
+						<div class="wrapper">
+						<p>
+							Another bar on a river boat. There’s just something about drinking on a boat that is more fun than drinking on dry land.
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.472263,44.814678,0.000000" data-zoom="16">
+						<h4>Idiott</h4>
+						<div class="wrapper">
+						<p>
+							A great place for a drink or two after a long first day in Belgrade. The beer is delicious in Serbia and we made a habit of drinking Belgrade’s own ‘Bip’ beer. Guzzle it!
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Saturday</h3>
+				<ul>
+					<li data-geo="20.457088,44.817886,0.000000" data-zoom="16">
+						<h4>Hleb &amp; Kifle</h4>
+						<div class="wrapper">
+						<p>
+							A pastry chain in Belgrade with delicious bites to keep you going as you explore the town.
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.466345,44.802105,0.000000" data-zoom="16">
+						<h4>Slavija Square</h4>
+						<div class="wrapper">
+						<p>
+							Our host Marko’s favorite spot in town, this giant roundabout is symbolic of what he called Belgrade’s ‘urban chaos’. Expect to see lots of cars going around in a circle.
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.450914,44.823734,0.000000">
+						<h4>Kalemegdan</h4>
+						<div class="wrapper">
+						<p>
+							This fortress is Belgrade’s most famous landmark. The oldest parts date back to the 1st century AD. Legend has it that Attila the Hun’s grave lies under this fortress. It overlooks the confluence of the River Sava and Danube and in Marko’s own words, ‘it is the gates to the west and the entrance to the east.’
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.463896,44.817207,0.000000" data-zoom="16">
+						<h4>Zlatni Bokal (Golden Jar) Restaurant</h4>
+						<div class="wrapper">
+						<p>
+							A traditional Serbian restaurant in Belgrade’s Bohemian Quarter (Skadarlija). The décor is traditional and ornate and it’s a cozy spot to enjoy some Serbian comfort food. This Is My City recommends the deep-fried meat dildo.
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.462208,44.816406,0.000000" data-zoom="16">
+						<h4>The Balkan Cinema</h4>
+						<div class="wrapper">
+						<p>
+							One of Belgrade’s old state-owned movie houses, the Balkan Cinema is currently closed due to a recent privatization of the industry. We hope it is open again by the time you are reading this.
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.454613,44.813889,0.000000" data-zoom="15">
+						<h4>Casa Garcia</h4>
+						<div class="wrapper">
+						<p>
+							A charming little Spanish bar in the center of Belgrade. Go here for salsa dancing, sangria and Mediterranean vibes.
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.452705,44.819691,0.000000" data-zoom="16">
+						<h4>Andergraund</h4>
+						<div class="wrapper">
+						<p>
+							Techno! Techno! Techno! A network of underground caverns in Belgrade’s Stari Grad neighborhood houses a banging music club that attracts DJs from all over the world. Apparently this place was once an air-raid shelter and also at one point, a mushroom farm. Worth going to if you fancy a bit of late night cave dancing.
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.458670,44.822308,0.000000" data-zoom="16">
+						<h4>Loki Grill</h4>
+						<div class="wrapper">
+						<p>
+							This Is My City is always interested in late night drunken cuisine and the Loki Grill serves the biggest burger with raw onions you’ve ever had the pleasure of consuming. You will remember it forever but mostly the next day.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Sunday, Monday</h3>
+				<ul>
+					<li data-geo="20.469131,44.798088,0.000000" data-zoom="16">
+						<h4>Saint Sava Cathedral</h4>
+						<div class="wrapper">
+						<p>
+							This mighty structure ranks as one of the ten largest church buildings in the world. So yes, it’s impressive and yes, you should take a look inside. It is dedicated to Saint Sava, the founder of the Serbian Orthodox Church.
+						</p>
+						</div>
+					</li>
+					<li data-geo="20.402985,44.788902,0.000000" data-zoom="16">
+						<h4>Gypsy Island</h4>
+						<div class="wrapper">
+						<p>
+							There are mysterious things on Gypsy Island, a man-made island that was created by siphoning off of a section of the River Sava. The siphoning formed an artificial lake, which is used for swimming and recreation. We biked around it and admired the river houses and old Balkan water towers.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="close-button"></div>	
+			</div></div>
+
+		</li><!--
+	--><li id="ep_4" class="off" data-ytid="jvoHFJQAL4Q">
+			<div class="media"></div>
+			<div class="cover" data-src="images/ep_4.jpg"></div>
+			<div class="play-button" data-target="ep_4">Play</div>
+			<div class="summary">
+				<h2>Beirut</h2>
+			</div>
+
+			<div class="bios"><div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<img src="images/bio-beirut-pedros.jpg" alt="Pedros Temizian">
+						</td>
+						<td>
+							<p>
+								Pedros Temizian was born in Armenia but has made Beirut, Lebanon his home for the last fifteen years. Working as an assistant director to pay the bills, Pedros is also an avid photographer and music video director. He has been involved with the local Lebanese underground music scene since he moved to the city. Pedros likes Beirut because he says it feels ‘alive’. If you are looking for Pedros, you will probably find him in one of the cafés, bars or music venues of the Hamra district. Otherwise you’ll find him working on his tan at the <a href="http://www.beirut.com/l/1304" target="_blank">Sporting Club</a>, an old-fashioned swimming club down by the sea.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="music"><div class="wrapper">
+				<div class="close-button"></div>	
+				<table>					
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Listen</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Shake Em Loose Tonight</td>
+							<td>Rumspringa</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/shakem-loose-tonight/id278700479?i=278700484" target="_blank">Shake Em Loose Tonight</a></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Bleeding Nun</td>
+							<td>Scrambled Eggs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/bleeding-nun/id461182323?i=461182325" target="_blank">Bleeding Nun</a></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Dark Disco</td>
+							<td>Lo Rez</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/dj-lo-rez/darkdisko" target="_blank">Dark Disco</a></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>ZaZi</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/zazi-oli-chang" target="_blank">ZaZi</a></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Shape Up</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/oli-chang-shape-up" target="_blank">Shape Up</a></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Mellow Dramatic</td>
+							<td>ladyninjitsu</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/ladyninjitsu/mellow-dramatic" target="_blank">Mellow Dramatic</a></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Johnny Anti-Christ</td>
+							<td>Scrambled Eggs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/johnny-anti-christ/id461182323?i=461182327" target="_blank">Johnny Anti-Christ</a></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>Allswell</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/olichang/allswell" target="_blank">Allswell</a></td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>Russian Roulette (live)</td>
+							<td>Scrambled Eggs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/russian-roulette/id461182323?i=461182324" target="_blank">Russian Roulette (live)</a></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Tribal Urinal Blues</td>
+							<td>The Incompetents</td>
+							<td><a class="youtube" href="http://youtu.be/bw9GnlRIpt4" target="_blank">Tribal Urinal Blues</a></td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>Just Just</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/olichang/just-just" target="_blank">Just Just</a></td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>Poul</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/olichang/poul" target="_blank">Poul</a></td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>Waves</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-waves" target="_blank">Waves</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="itinerary"><div class="wrapper">
+				<h3 data-bind="css: { on: selectedDay() === $element }">Thursday</h3>
+				<ul>
+					<li data-geo="35.499504,33.899403,0.000000" data-zoom="16">
+						<h4>Ramada Hotel</h4>
+						<div class="wrapper">
+							<p>
+								The Ramada Downtown is where we stayed in Beirut. Would we recommend it? No we wouldn’t. Why? Because it’s a Ramada.
+							</p>
+						</div>
+					</li>
+					<li data-geo="35.506348,33.894993,0.000000" data-zoom="13">
+						<h4>Mohammad Al-Amin Mosque</h4>
+						<div class="wrapper">
+							<p>
+								This is a mighty Sunni mosque situated in Martyr’s Square in downtown Beirut. It was built between 2002 and 2007 and its Ottoman inspired blue domes are quite beautiful. As a reminder of the troubles of Lebanon, a large security fence and barbed wire surrounds the area.
+							</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Friday</h3>
+				<ul>
+					<li data-geo="35.518757,33.895035,0.000000" data-zoom="16">
+						<h4>Le Chef</h4>
+						<div class="wrapper">
+						<p>
+							An unassuming restaurant in Gemayze famous or perhaps infamous for the proprietor there who says ‘welcome’ ten to fifteen times-per-minute. He welcomes both the guests already in his restaurant as well as passersby on the street. Needless to say, we felt pretty welcome there and the food, which is Mediterranean/Lebanese, was also delicious and cheap.
+						</p>
+						</div>
+					</li>
+					<li data-geo="35.485474,33.896103,0.000000" data-zoom="16">
+						<h4>Walimat Wardeh</h4>
+						<div class="wrapper">
+						<p>
+							A great bar and music venue in Hamra that’s cozy and laid back during the day and hopping at night. We ended up here on both our Friday and Saturday nights in Beirut. All in all a quality place to experience Beirut’s homegrown music scene.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Saturday</h3>
+				<ul>
+					<li data-geo="35.530727,33.884869,0.000000" data-zoom="16">
+						<h4>Souk el Ahad Flea Market (Corniche Al Naher)</h4>
+						<div class="wrapper">
+						<p>
+							Like flea markets we visited all over the world, this one has a lot of vendors and a lot of random stuff. In addition to random stuff you will find a colorful animals and birds section here and it’s the first flea market Thomas has ever been to where he found size 14 shoes. Score!
+						</p>
+						</div>
+					</li>
+					<li data-geo="35.540245,33.894169,0.000000" data-zoom="16">
+						<h4>Basterma Mano (Mano’s Restaurant)</h4>
+						<div class="wrapper">
+						<p>
+							This restaurant is in Borj Hammoud, the Armenian district of Beirut. The shawarma is off the charts and it’s a happening place that’s good for both eating and people watching.
+						</p>
+						</div>
+					</li>
+					<li data-geo="35.529934,33.879322,0.000000" data-zoom="16">
+						<h4>Beirut Arts Center</h4>
+						<div class="wrapper">
+						<p>
+							A beautiful 16,000-square-foot space, this is the first large-scale contemporary art gallery of its kind in Beirut. It opened in January 2009 and has since become an important cultural landmark for locals and visitors alike.
+						</p>
+						</div>
+					</li>
+					<li data-geo="35.532703,33.915585,0.000000" data-zoom="14">
+						<h4>Cotton Candy</h4>
+						<div class="wrapper">
+						<p>
+							Cotton Candy is not a party in a single location but a party in many different locations. It moves around and details about where it is emerge just a few days beforehand. Expect a crazy party, quality DJs, a weird crowd and a memorable time. Seek it out!
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Sunday</h3>
+				<ul>
+					<li data-geo="35.507889,33.887985,0.000000" data-zoom="16">
+						<h4>Abd El Wahab Restaurant</h4>
+						<div class="wrapper">
+						<p>
+							This is a gourmet Lebanese food experience. It’s not terribly expensive and it was definitely the best meal we had while we were in town. This Is My City recommends the hummus and anything from the grill.
+						</p>
+						</div>
+					</li>
+					<li data-geo="35.498283,33.843365,0.000000" data-zoom="16">
+						<h4>Burj el-Barajnh</h4>
+						<div class="wrapper">
+						<p>
+							Translated as ‘Tower of Towers’, this Palestinian refugee camp houses some 20,000 refugees who lack basic civil rights. It is not recommended for Westerners to visit this camp without a local guide.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Monday</h3>
+				<ul>
+					<li data-geo="35.467945,33.893047,0.000000" data-zoom="16">
+						<h4>The Sporting Club</h4>
+						<div class="wrapper">
+						<p>
+							This is a Beirut institution from a different age. A classic and classy swimming club, it’s got several salt-water swimming pools, the sea itself and also a charming café. If the weather’s nice, you should consider spending a day here. You might even run into our host Pedros working on his tan.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="close-button"></div>	
+			</div></div>
+
+		</li><!--
+		--><li id="ep_5" class="off" data-ytid="hx35kanMWh0">
+			<div class="media"></div>
+			<div class="cover" data-src="images/ep_5.jpg"></div>
+			<div class="play-button" data-target="ep_5">Play</div>
+			<div class="summary">
+				<h2>Beijing</h2>
+			</div>
+
+			<div class="bios"><div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<img src="images/bio-beijing-linlin.jpg" alt="Lin Lin">
+						</td>
+						<td>
+							<p>
+								Born in Guangzhou, China, Lin Lin lived in London for 11 years before moving back to China in ’06. This is why she speaks English with a notably posh British accent. 5-foot-nothing, witty and wickedly stylish, Lin Lin is the cofounder of <a href="http://jellymon.com/" target="_blank">Jellymon</a>, a successful design company with offices in Beijing and Shanghai. Lin Lin works hard and she plays harder. She likes fashion, rock music, hot pot and hot pants. She also likes cycling her neon fixed gear bicycle around Beijing - an activity that turns a lot of heads.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="music"><div class="wrapper">
+				<div class="close-button"></div>	
+				<table>					
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Listen</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Marathon</td>
+							<td>Disasterpeace</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/marathon/id505426297?i=505426301" target="_blank">Marathon</a></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Doubt, No</td>
+							<td>Chrome Sparks</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/doubt-no/id585810112?i=585810156" target="_blank">Doubt, No</a></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Celestes</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-celestes" target="_blank">Celestes</a></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Flowers Bloom</td>
+							<td>High Highs</td>
+							<td><a class="bandcamp" href="http://highhighsmusic.bandcamp.com/track/flowers-bloom-2" target="_blank">Flowers Bloom</a></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Our Love Is Heartbeats; Our Love Is Hot Beats</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/chrome-sparks/our-love-is-heartbeats-our-love-is-hot-beats" target="_blank">Our Love Is Heartbeats; Our Love Is Hot Beats</a></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Liquid Guitar</td>
+							<td>Lo Rez</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/dj-lo-rez/liquid-guitar" target="_blank">Liquid Guitar</a></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>I’ll Be Wait For Sadness Comes Along</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/chrome-sparks/ill-be-wait-for-sadness-comes-along" target="_blank">I’ll Be Wait For Sadness Comes Along</a></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>Le Loup (Fear Not)</td>
+							<td>Le Loup</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/le-loup-fear-not/id262870733?i=262872405" target="_blank">Le Loup (Fear Not)</a></td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>Escape</td>
+							<td>Toxic Avenger</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/escape-bloody-beetroots-remix/id264747342?i=264747626" target="_blank">Escape</a></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Big City Chick</td>
+							<td>ladyninjitsu</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/ladyninjitsu/bigcity-chick-extended" target="_blank">Big City Chick</a></td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>Reason Virgin</td>
+							<td>ladyninjitsu</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/ladyninjitsu/reason-virgin" target="_blank">Reason Virgin</a></td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>Epic High School</td>
+							<td>Love Like Deloreans</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/epic-highschool/id315125891?i=315125896" target="_blank">Epic High School</a></td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>The Singer</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-the-singer" target="_blank">The Singer</a></td>
+						</tr>
+						
+					</tbody>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="itinerary"><div class="wrapper">
+				<h3 data-bind="css: { on: selectedDay() === $element }">Thursday</h3>
+				<ul>
+					<li data-geo="116.393951,39.944614,0.000000" data-zoom="16">
+						<h4>3 + 1 Bedrooms Boutique Hotel</h4>
+						<div class="wrapper">
+							<p>
+								A true boutique hotel experience in a Hutong in Dongcheng. There are four bedrooms here in total (3+1) and our one had a tub in the room as well as a great little outdoor Hutong-style courtyard.
+							</p>
+						</div>
+					</li>
+					<li data-geo="116.456390,39.931385,0.000000" data-zoom="13">
+						<h4>D Lounge</h4>
+						<div class="wrapper">
+							<p>
+								Located in the hip Sanlitun area of Beijing, this space operates as an art space during the day and a quality cocktail lounge at night. You will encounter Beijing’s cultured elite, assorted expats, flaming cocktails and velvety couches.
+							</p>
+						</div>
+					</li>
+					<li data-geo="116.466675,39.924431,0.000000" data-zoom="13">
+						<h4>Jin Ding Xuan Dumpling Palace</h4>
+						<div class="wrapper">
+							<p>
+								This is a 24-hour, 5-story neon Dim Sum Palace. A great late-night supper destination, you can eat every kind of dumpling imaginable from soup-filled to translucent and if you like munching on chicken feet, well you can do that here too.
+							</p>
+						</div>
+					</li>
+				</ul>
+				
+				<h3 data-bind="css: { on: selectedDay() === $element }">Friday</h3>
+				<ul>
+					<li data-geo="116.397354,39.918098,0.000000" data-zoom="16">
+						<h4>The Forbidden City</h4>
+						<div class="wrapper">
+						<p>
+							For 500 years, from Ming Dynasty to Qing Dynasty, the Forbidden City was the Imperial Palace that housed emperors and their families. It was also the ceremonial and political center of the Chinese government. Today it houses the Palace Museum and its sweeping squares and Chinese palatial architecture will both impress you and make you feel unimportant in the grand scheme of things. For entertainment, check out the multitude of tour groups.
+						</p>
+						</div>
+					</li>
+					<li data-geo="116.395020,39.914032,0.000000" data-zoom="16">
+						<h4>4-Star Toilet in The Forbidden City</h4>
+						<div class="wrapper">
+						<p>
+							If you need to go, you should go here and marvel at why exactly this public toilet has garnered four stars…
+						</p>
+						</div>
+					</li>
+					<li data-geo="116.421295,39.915455,0.000000" data-zoom="16">
+						<h4>Dadong Roast Duck Shop</h4>
+						<div class="wrapper">
+						<p>
+							Advertised as a National Special Grade Restaurant and one of the best for Peking Duck in Beijing, this place did not disappoint. The chefs carve the duck with great precision beside your table and then it’s up to you to combine duck, cucumber, scallion and Hoisin sauce, roll it up in a pancake and put it in your belly. Delicious!
+						</p>
+						</div>
+					</li>
+					<li data-geo="116.455177,39.936249,0.000000" data-zoom="16">
+						<h4>Apothecary</h4>
+						<div class="wrapper">
+						<p>
+							Another New York style cocktail bar in the Sanlitun area of Beijing. Known for its relaxed vibe and high quality beverages, some of which are made from their own unique infusions. Oooooh.
+						</p>
+						</div>
+					</li>
+					<li data-geo="116.394386,39.944660,0.000000" data-zoom="16">
+						<h4>Bed Tapas and Bar</h4>
+						<div class="wrapper">
+						<p>
+							Reminiscent of an opium den, this bar in the Dongcheng hood has a couple of semi-private rooms twisted around an open hutong courtyard. You can drink cocktails or sangria, lounge on the many beds and chat to a mostly expat hipster crowd. Look for special events and parties happening here. 
+						</p>
+						</div>
+					</li>
+				</ul>
+					
+				<h3 data-bind="css: { on: selectedDay() === $element }">Saturday</h3>
+				<ul>
+					<li data-geo="116.402016,39.944359,0.000000" data-zoom="16">
+						<h4>Hutong Cycling</h4>
+						<div class="wrapper">
+						<p>
+							Cycling is something you should really try to do when in Beijing. The bicycle culture is amazing here (everybody cycles) and it’s a very chill way of seeing the city. Beijing’s Hutongs are narrow alleys formed by lines of traditional courtyard residences and biking through them, you will experience Beijing’s vibrant street life in the best possible way.
+						</p>
+						</div>
+					</li>
+					<li data-geo="116.410316,39.937820,0.000000" data-zoom="16">
+						<h4>Da Great / Dagui</h4>
+						<div class="wrapper">
+						<p>
+							In a traditional Hutong setting, this restaurant served up some amazing Hot Pot. Hot Pot is basically a giant pot of spicy soup with vegetables, tofu and a whole fish in the mix. Eat it!
+						</p>
+						</div>
+					</li>
+					<li data-geo="116.414757,39.933681,0.000000" data-zoom="16">
+						<h4>Yugong Yishan</h4>
+						<div class="wrapper">
+						<p>
+							This is perhaps Beijing’s most well-known contemporary music venue. Local and international DJs and touring bands perform here. Look out for a regular night called ‘Hot Pot’ featuring <a href="http://www.djwordy.com/" target="_blank">DJ Wordy</a> and special guests.
+						</p>
+						</div>
+					</li>
+					<li data-geo="116.386497,39.993526,0.000000" data-zoom="14">
+						<h4>Pangu 7 Star Hotel</h4>
+						<div class="wrapper">
+						<p>
+							Built for the 2008 Beijing Olympics, this über-luxurious hotel is shaped like the Olympic torch and was designed for ‘rich people who have nothing better to do’, says Lin Lin. If you happen to go along to a party in the Penthouse, it is best not to try to steal the cigars that are on display.
+						</p>
+						</div>
+					</li>
+					<li data-geo="116.397697,39.906048,0.000000" data-zoom="14">
+						<h4>Tian’an Men Square</h4>
+						<div class="wrapper">
+						<p>
+							This is a huge city square located to the north of the Forbidden City. Every morning between 6am and 8am, thousands of people gather to watch the raising of the flag of the People’s Republic of China by the National Guard. Is it worth staying awake for? Yes.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Sunday</h3>
+				<ul>
+					<li data-geo="116.503174,39.998558,0.000000" data-zoom="16">
+						<h4>Caochangdi District</h4>
+						<div class="wrapper">
+						<p>
+							An urban village and renowned arts district located in the Chaoyang district of northeast Beijing. Ai Weiwei moved here in 2000 and it has since transitioned into a thriving arts and cultural hub with lots of galleries for you to poke around in on a Sunday afternoon.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Monday</h3>
+				<ul>
+					<li data-geo="116.412521,39.887989,0.000000" data-zoom="12">
+						<h4>Temple of Heaven</h4>
+						<div class="wrapper">
+						<p>
+							The Temple of Heaven is a complex of religious buildings located in the southeastern part of central Beijing. Expect sacrificial altars, beautiful gardens, temples of various shapes and sizes and as usual, lots of people.
+
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="close-button"></div>		
+			</div></div>
+
+		</li><!--
+	
+		--><li id="ep_6" class="off" data-ytid="yxSuoAru0ik">
+			<div class="media"></div>
+			<div class="cover" data-src="images/ep_6.jpg"></div>
+			<div class="play-button" data-target="ep_6">Play</div>
+			<div class="summary">
+				<h2>Tokyo</h2>
+			</div>
+
+			<div class="bios"><div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<img src="images/bio-tokyo-tomo.jpg" alt="Tomo">
+						</td>
+						<td>
+							<p>
+								Originally from Minato-ku, Tokyo, Tomo Hojo now lives and works in Shibuya. He is is a producer for <a href="http://www.setjapan.com/" target="_blank">SetJapan</a>, a successful film production company and digital marketing agency. Before entering the film business, Tomo trained as a sushi chef and owned his own restaurant in Tokyo. He likes Japan’s culinary scene, dance parties, face painting and singing karaoke late-night.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/bio-tokyo-masa.jpg" alt="Masa">
+						</td>
+						<td>
+							<p>
+								Masa (Masato Okuno) is from Sakura in northern Japan and now lives in Itabashi-ku, Tokyo. Masa works for the music publishing company <a href="http://www.mediafactory.co.jp/" target="_blank">Media Factory</a> and is a general music aficionado. He studied music in Berkley, Masachussets and picked up some excellent spoken English in the process. Masa likes arcades, baseball, Indie music and drinking on the streets.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/bio-tokyo-takeki.jpg" alt="Takeki">
+						</td>
+						<td>
+							<p>
+								Muto Takeki Ygal is a pianist, composer and singer living in Shinjuku, Tokyo. One day Takeki will be composing <a href="http://takekiygalmuto.com/" target="_blank">serious contemporary classical music</a> and playing the emperor’s piano for state dignitaries. The next day he will play piano and sing in one of his many experimental J-Pop bands, cabaret troops or jazz groups. Takeki likes Tokyo’s underground classical music cafes, the Golden Street bars and places in Tokyo where he can go to be alone. 
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="music"><div class="wrapper">
+				<div class="close-button"></div>	
+				<table>					
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Listen</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Nu=Dance</td>
+							<td>Gari</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/nu-dance/id393445144?i=393445145" target="_blank">Nu=Dance</a></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Chinea</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chinea-oli-chang" target="_blank">Chinea</a></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Epic High School</td>
+							<td>Love Like Deloreans</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/epic-highschool/id315125891?i=315125896" target="_blank">Epic High School</a></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Boxing</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/boxing-oli-chang" target="_blank">Boxing</a></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>You Must Fly To The Galazy!</td>
+							<td>Gallantique Kazue</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/you-must-fly-to-the-galaxy" target="_blank">You Must Fly To The Galazy!</a></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Phone Call</td>
+							<td>High Highs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/phone-call/id592222899?i=592223212" target="_blank">Phone Call</a></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>So Zui</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/so-zui-oli-chang" target="_blank">So Zui</a></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>Just Just</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/olichang/just-just" target="_blank">Just Just</a></td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>An Aura Sounding Pt 1</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-an-aura" target="_blank">An Aura Sounding Pt 1</a></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Castle of Glass</td>
+							<td>Gallantique Kazue</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/castle-of-glass-gallantique" target="_blank">Castle of Glass</a></td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>Le Loup (Fear Not)</td>
+							<td>Le Loup</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/le-loup-fear-not/id262870733?i=262872405" target="_blank">Le Loup (Fear Not)</a></td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>Open Season</td>
+							<td>High Highs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/open-season/id592222899?i=592223210" target="_blank">Open Season</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="itinerary"><div class="wrapper">
+				<h3 data-bind="css: { on: selectedDay() === $element }">Friday</h3>
+				<ul>
+					<li data-geo="139.770309,35.666004,0.000000" data-zoom="16">
+						<h4>Inoue Ramen</h4>
+						<div class="wrapper">
+							<p>
+								Most people eat sushi for breakfast when they visit the Tsukiji Fish Market. But who really wants sushi for breakfast? We had a warming bowl of pork Ramen at this outdoor vendor and it was awesome.
+							</p>
+						</div>
+					</li>
+					<li data-geo="139.767166,35.664822,0.000000" data-zoom="16">
+						<h4>Tsukiji Fish Market</h4>
+						<div class="wrapper">
+							<p>
+								Five football fields filled with creatures from the sea - this busy market is a must-see Tokyo landmark. Every sushi chef in the city shops here on a daily basis so just be careful that you don’t get in the way of their business!
+							</p>
+						</div>
+					</li>
+					<li data-geo="139.577591,35.656700,0.000000" data-zoom="16">
+						<h4>Mikawa Sushi</h4>
+						<div class="wrapper">
+						<p>
+							A local sushi joint close to the Tsutsujigaoka train station in Chōfu, Tokyo. The sushi was top notch here and the sake was flowing. The sushi chef, Kouji Matsushita, is also known simply as ‘The Master.’
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Saturday</h3>
+				<ul>
+					<li data-geo="139.699356,35.676361,0.000000" data-zoom="16">
+						<h4>Meiji Shrine</h4>
+						<div class="wrapper">
+						<p>
+							This Shinto shrine is in the middle of Yoyogi Park in Shibuya, Tokyo. Here in the evergreen forest you’ll find some peace and serenity and a break from the commercial bustle. You can wash away your sins, make a wish and check out the Japanese weddings that happen here every day.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.703110,35.671532,0.000000" data-zoom="16">
+						<h4>Takeshita Street</h4>
+						<div class="wrapper">
+						<p>
+							Takeshita Street is the main pedestrian-only shopping strip in Harajuku. It’s a sea of teenagers and tourists shopping their hearts out.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.705246,35.736874,0.000000">
+						<h4>Ikebukuro</h4>
+						<div class="wrapper">
+						<p>
+							A commercial and entertainment district in Toshima, Tokyo. This is where you’ll find huge shopping malls, arcades, batting cages, restaurants and the Toyota headquarters if that’s of interest to you.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.759521,35.668362,0.000000" data-zoom="16">
+						<h4>Tokyo Ice Bar</h4>
+						<div class="wrapper">
+						<p>
+							A bar made of ice imported from Lapland. Your entry fee gets you a wooly coat, a drink served in a glass made of ice and a severe case of the chills.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.761108,35.671593,0.000000" data-zoom="16">
+						<h4>Boogiewoogie Café</h4>
+						<div class="wrapper">
+						<p>
+							Bars and nightclubs seem to be known as cafés in Tokyo and this one is a haven for an old style of lyrical J-Pop known as ‘Showa-style.’ We were entertained here all night by singers and performers we couldn’t understand.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Sunday</h3>
+				<ul>
+					<li data-geo="139.796616,35.711922,0.000000" data-zoom="16">
+						<h4>Asakusa</h4>
+						<div class="wrapper">
+						<p>
+							Asakusa is a historic district in Taito, Tokyo most famous for the Senso-ji Bhuddist temple situated there. It also houses an amusement park, famous theaters and cinemas and a busy shopping area for more traditional Japanese crafts.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.794540,35.715282,0.000000" data-zoom="16">
+						<h4>Hanayashiki Amusement Park</h4>
+						<div class="wrapper">
+						<p>
+							This tiny Asakusa amusement park is totally cute and tacky and worth a visit. You have be under 6ft 6’ to get on the rollercoaster though. Just FYI.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.798355,35.711903,0.000000" data-zoom="16">
+						<h4>Matsuya Asakusa Department Store</h4>
+						<div class="wrapper">
+						<p>
+							Department Stores are a dime-a-dozen in Tokyo but this one has a cool, forgotten space on the rooftop. There are some dilapidated old amusements, a café and a place to sit down and enjoy the moment.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.581772,35.705093,0.000000" data-zoom="16">
+						<h4>Star Pine’s Café</h4>
+						<div class="wrapper">
+						<p>
+							Located in Kichijoji, this café/bar/club provides music, dance and cabaret shows for your entertainment. The artists who perform here are pretty experimental, and genres range from jazzy or progressive to avant-garde and dancey. Cool place!
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.704498,35.694138,0.000000" data-zoom="17">
+						<h4>Golden St., Shinjuku</h4>
+						<div class="wrapper">
+						<p>
+							This is a must-see if you’re going to Tokyo. About a hundred tiny sake bars line a 3-block area. They’re so small that you’re pretty much guaranteed to get to know everyone inside.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.704583,35.694038,0.000000" data-zoom="19">
+						<h4>Soiree Bar</h4>
+						<div class="wrapper">
+						<p>
+							One of Golden Street’s smallest bars, we couldn’t fit in the downstairs area, as there were already five people present. So we took our drinks up a ladder to an attic room that housed an old electric piano.
+						</p>
+						</div>
+					</li>
+					<li data-geo="139.704624,35.693803,0.000000" data-zoom="19">
+						<h4>Night Flight Bar</h4>
+						<div class="wrapper">
+						<p>
+							This little Golden Street gem is run by a drag queen musician named Gallantique Kazue. The bar is lined with bottles of Sake that have the names of locals written on them. You buy a bottle and keep it at the bar for future use. Wicked!
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Monday</h3>
+				<ul>
+					<li data-geo="139.732071,35.658691,0.000000" data-zoom="18">
+						<h4>Mori Tower in Ruppungi Hills</h4>
+						<div class="wrapper">
+						<p>
+							If you want to get a good sense of the sheer size of Tokyo, head up to the top of the Mori Tower. The city stretches as far as the eye can see in every direction and only Mount Fuji in the distance suggests that there is actually an end to the urban undulations.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="close-button"></div>	
+			</div></div>
+
+		</li><!--
+
+			--><li id="ep_7" class="off" data-ytid="cF0qapqiRJ4">
+			<div class="media"></div>
+			<div class="cover" data-src="images/ep_7.jpg"></div>
+			<div class="play-button" data-target="ep_7">Play</div>
+			<div class="summary">
+				<h2>Melbourne</h2>
+			</div>
+
+			<div class="bios"><div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<img src="images/bio-melbourne-beci.jpg" alt="Beci">
+						</td>
+						<td>
+							<p>
+								<a href="http://beciorpin.com/" target="_blank">Beci Orpin</a> was born in Melbourne, Australia to hippy parents in the 1970s. She lives in Melbourne to this day and now has her own hippy family as well as an awesome home, a business and a large collection of weird and wonderful objects. Beci is an artist, graphic designer, textile designer and jewelry designer and she exhibits both at home and abroad. Beci likes urban beasts such as foxes, bats, rabbits and unicorns. She also likes good coffee, picnics, going to the beach and occasionally hitting the town for a bit of old school debauchery.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="music"><div class="wrapper">
+				<div class="close-button"></div>	
+				<table>					
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Listen</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Le Loup (Fear Not)</td>
+							<td>Le Loup</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/le-loup-fear-not/id262870733?i=262872405" target="_blank">Le Loup (Fear Not)</a></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Tink</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/oli-chang-tink" target="_blank">Tink</a></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Control</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/control-oli-chang" target="_blank">Control</a></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Moosh Again</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/moosh-again-oli-chang" target="_blank">Moosh Again</a></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Old Ye</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/old-ye-oli-chang" target="_blank">Old Ye</a></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Calling</td>
+							<td>PJ Wolf</td>
+							<td><a class="bandcamp" href="http://pjwolf.bandcamp.com/track/calling" target="_blank">Calling</a></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Curls</td>
+							<td>Oli Chang</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/curls-oli-chang" target="_blank">Curls</a></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>On the Train</td>
+							<td>Theater of Disco</td>
+							<td><a class="youtube" href="http://youtu.be/GesKmjGpF9I" target="_blank">On the Train</a></td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>Pines</td>
+							<td>High Highs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/pines/id592222899?i=592223218" target="_blank">Pines</a></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>YOA (NO REMIX)</td>
+							<td>Theatre of Disco</td>
+							<td><a class="youtube" href="http://youtu.be/PN6lrcu8oEU" target="_blank">YOA (NO REMIX)</a></td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>Marijuana</td>
+							<td>Chrome Sparks</td>
+							<td><a class="bandcamp" href="http://chromesparks.bandcamp.com/track/marijuana-2" target="_blank">Marijuana</a></td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>Go Fifi</td>
+							<td>Theater of Disco</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/theater-of-disco-go-fifi" target="_blank">Go Fifi</a></td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>In A Dream</td>
+							<td>High Highs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/in-a-dream/id592222899?i=592223213" target="_blank">In A Dream</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="itinerary"><div class="wrapper">
+				<h3 data-bind="css: { on: selectedDay() === $element }">Friday</h3>
+				<ul>
+					<li data-geo="144.987030,-37.776871,0.000000" data-zoom="16">
+						<h4>Note to Self Studio</h4>
+						<div class="wrapper">
+							<p>
+								If you are in the market for denim, visit Max Olijnyk in his studio where he makes beautiful custom jeans from raw Japanese denim. Or you could just buy them <a href="http://notetoself.com.au/" target="_blank">here</a>.
+							</p>
+						</div>
+					</li>
+					<li data-geo="144.959045,-37.802906,0.000000" data-zoom="16">
+						<h4>Seven Seeds Coffee Shop</h4>
+						<div class="wrapper">
+							<p>
+								A Melbourne coffee institution, this is where the coffee connoisseurs hang out and drink the best stuff. Besides the café, there is a state of the art roasting facility and a dedicated cupping room where they hold regular tasting and training events. This here is coffee science!
+							</p>
+						</div>
+					</li>
+					<li data-geo="144.956711,-37.807789,0.000000" data-zoom="16">
+						<h4>Queen Victoria Market</h4>
+						<div class="wrapper">
+						<p>
+							Like Victorian markets the world over, this one is a temple of fruit, vegetables, meat, poultry, seafood and other gourmet delights. At one stand you can buy crocodile meat, ostrich, kangaroo and emu.
+						</p>
+						</div>
+					</li>
+					<li data-geo="145.010406,-37.794060,0.000000" data-zoom="16">
+						<h4>Studley Park (aka Yarra Bend Park)</h4>
+						<div class="wrapper">
+						<p>
+							If you are in the mood for some post­apocalyptic bat­watching at dusk, head to Studley Park and look up. It’s pretty awesome to see hundreds of huge, awkward fruit bats heading out across the city for their dinner. Be sure to pack some whiskey for the show.
+						</p>
+						</div>
+					</li>
+					<li data-geo="144.965134,-37.812035,0.000000" data-zoom="16">
+						<h4>The Toff</h4>
+						<div class="wrapper">
+						<p>
+							A wicked multi­layered venue, the Toff is a performance space with an attached club/bar area located on the second floor of the historic Curtain House building. Great place to catch a gig or generally party the night away. Also worth a try is <a href="http://cookie.net.au/" target="_blank">Cookie</a>, an Asian restaurant on the floor above.
+						</p>
+						</div>
+					</li>
+					<li data-geo="144.967606,-37.812904,0.000000" data-zoom="16">
+						<h4>The Carlton Hotel</h4>
+						<div class="wrapper">
+						<p>
+							This is another interesting bar you may well end up at on a weekend night in Melbourne. We have vague recollections of a tropical balcony, a giant ostrich and red velvet. There may also have been some dancing.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Saturday</h3>
+				<ul>
+					<li data-geo="144.993439,-37.850677,0.000000" data-zoom="16">
+						<h4>Revolver Upstairs</h4>
+						<div class="wrapper">
+						<p>
+							This infamous Melbourne club is the kind of place you can show up to for a civilized Thai dinner and then stay until well past breakfast the next day! In fact, you can stay here for the whole weekend if you like. There will probably be some dancing, some sweating, some shite­talking and definitely a large dose of craziness you won’t soon forget. Check out the Banksy stencils (now behind glass) on the walls.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Sunday</h3>
+				<ul>
+					<li data-geo="144.987991,-37.865879,0.000000" data-zoom="16">
+						<h4>Lab X Gallery</h4>
+						<div class="wrapper">
+						<p>
+							This is an exhibition space (and photo lab) located in St. Kilda, Melbourne. We went to a Beci Orpin show here but there’s always something interesting going on. You can also buy medium format film here if you so desire.
+						</p>
+						</div>
+					</li>
+					<li data-geo="144.983353,-37.804882,0.000000" data-zoom="16">
+						<h4>Grace Darling Hotel</h4>
+						<div class="wrapper">
+						<p>
+							Located in the hip Collingwood area, this is a wicked gastro pub that doubles up as a vintage clothing store on the weekends. A perfect place to spend an evening, or a whole day for that matter.
+						</p>
+						</div>
+					</li>
+					<li data-geo="144.958984,-37.766762,0.000000" data-zoom="16">
+						<h4>The Victoria Hotel</h4>
+						<div class="wrapper">
+						<p>
+							A weird and wonderful bar in Brunswick, North Melbourne, that features a large outdoor area, a black and white checkered dance floor and a bunch of odd ball patrons. There’s a grill in the back that you can use for your own BBQ madness.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Monday</h3>
+				<ul>
+					<li data-geo="145.010605,-37.966396,0.000000" data-zoom="16">
+						<h4>Half Moon Bay</h4>
+						<div class="wrapper">
+						<p>
+							A short drive south east along the coast brings you to a charming bay that has a pier you can jump from and a beach you can play on and a collection of colorful beach boxes that you can sit (or party) in if you happen to know one of the owners of said beach boxes.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="close-button"></div>	
+			</div></div>
+
+		</li><!--
+				--><li id="ep_8" class="off" data-ytid="h8IoMN4nVZs">
+			<div class="media"></div>
+			<div class="cover" data-src="images/ep_8.jpg"></div>
+			<div class="play-button" data-target="ep_8">Play</div>
+			<div class="summary">
+				<h2>Wellington</h2>
+			</div>
+
+			<div class="bios"><div class="wrapper">
+				<table>
+					<tr>
+						<td>
+							<img src="images/bio-wellington-joe.jpg" alt="Joe">
+						</td>
+						<td>
+							<p>
+								Joe Lindsay is a Wellington native and general legend­about­town. He lives with his partner Alicia and their son Benny in Seatoun Heights overlooking the harbor. Joe plays trombone with <a href="http://www.fatfreddysdrop.com/" target="_blank">Fat Freddy’s Drop</a>, one of the most successful contemporary bands in New Zealand. He is a talented trombone player and also the craziest man on stage, capable of inspiring thousands of people to simultaneously move their hips. Joe loves Wellington’s homegrown cultural scene, craft beer, four­wheel­driving on the south side, shopping for records and hunting for vintage clothing on Cuba Street.
+							</p>
+						</td>
+					</tr>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="music"><div class="wrapper">
+				<div class="close-button"></div>	
+				<table>					
+					<tbody>
+						<tr>
+							<th>Number</th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Listen</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Boondigga</td>
+							<td>Fat Freddy's Drop</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/boondigga/id324321434?i=324321455" target="_blank">Boondigga</a></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>White Water</td>
+							<td>High Highs</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/white-water/id592222899?i=592223209" target="_blank">White Water</a></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Ode To Beug</td>
+							<td>Jackson Milas</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/ode-to-beug-jackson-milas" target="_blank">Ode To Beug</a></td>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>The Raft</td>
+							<td>Fat Freddy's Drop</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/the-raft/id324321434?i=324321457" target="_blank">The Raft</a></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Our Love Is Heartbeats;<br>Our Love Is Hot Beats</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/chrome-sparks/our-love-is-heartbeats-our-love-is-hot-beats" target="_blank">Our Love Is Heartbeats; Our Love Is Hot Beats</a></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Shiverman</td>
+							<td>Fat Freddy's Drop</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/shiverman/id324321434?i=324321453" target="_blank">Shiverman</a></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Ray Ray</td>
+							<td>Fat Freddy's Drop</td>
+							<td><a class="itunes" href="https://itunes.apple.com/us/album/ray-ray/id340180839?i=340180976" target="_blank">Ray Ray</a></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>For The French Girls</td>
+							<td>Chrome Sparks</td>
+							<td><a class="soundcloud" href="https://soundcloud.com/thisismycity/chrome-sparks-for-the-french" target="_blank">OFor The French Girls</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="close-button"></div>	
+			</div></div>
+			<div class="itinerary"><div class="wrapper">
+				<h3 data-bind="css: { on: selectedDay() === $element }">Wednesday</h3>
+				<ul>
+					<li data-geo="174.782516,-41.291733,0.000000" data-zoom="16">
+						<h4>Museum Art Hotel</h4>
+						<div class="wrapper">
+						<p>
+							A wonderful hotel located in downtown Wellington. With a great restaurant and bar as well as an extensive modern art collection, it’s worth a visit even if you’re not staying here.
+						</p>
+						</div>
+					</li>
+				</ul>
+				<h3 data-bind="css: { on: selectedDay() === $element }">Thursday</h3>
+				<ul>
+					<li data-geo="174.781433,-41.290459,0.000000" data-zoom="16">
+						<h4>Museum of New Zealand ­ Te Papa Tongarewa</h4>
+						<div class="wrapper">
+							<p>
+								 Te Papa is the national museum and art gallery of New Zealand. Permanent exhibitions include those on New Zealand history, New Zealand’s natural world and Māori culture. There is a focus on interactive exhibits here, which makes the experience fun for both children and adults.
+							</p>
+						</div>
+					</li>
+					<li data-geo="174.762985,-41.347946,0.000000" data-zoom="16">
+						<h4>Dive Wellington (formerly Splash Gordons)</h4>
+						<div class="wrapper">
+							<p>
+								Dive shop, diving school and gear rental shop on the south side of Wellington and right across the road from the Taputeranga Marine Reserve. Gear up for free­diving here.
+							</p>
+						</div>
+					</li>
+					<li data-geo="174.737869,-41.348721,0.000000" data-zoom="16">
+						<h4>Red Rocks</h4>
+						<div class="wrapper">
+						<p>
+							Red Rocks is just beyond the Taputeranga Marine Reserve on the south side of Wellington and it’s ideal for free diving, spear fishing and catching crayfish with your bare hands. If you are into that sort of thing.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.779694,-41.313713,0.000000" data-zoom="16">
+						<h4>Fish Fins</h4>
+						<div class="wrapper">
+						<p>
+							Getting fish n’ chips after hours of free diving in the freezing Cook Strait waters is all you could really ask for. This is the best place to get said fish n’ chips in Wellington.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.775085,-41.295830,0.000000" data-zoom="16">
+						<h4>Havana Bar</h4>
+						<div class="wrapper">
+						<p>
+							Awesome Cuban themed bar with great Dark n’ Stormy cocktails (spiced rum and Bundagerg NZ ginger beer) and frequent live gigs for your listening pleasure.
+						</p>
+						</div>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Friday</h3>
+				<ul>
+					<li data-geo="174.779999,-41.289890,0.000000" data-zoom="17">
+						<h4>Mac’s Brew Bar and Restaurant</h4>
+						<div class="wrapper">
+						<p>
+							Mac’s was New Zealand’s first microbrewery and still one of the best. For a great beer tour, contact the folks over at <a href="https://blardiblah.com/locations/oceania/new-zealand/" target="_blank">Absolutely Positively Wellington</a>.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.781601,-41.293510,0.000000" data-zoom="17">
+						<h4>The Malt House</h4>
+						<div class="wrapper">
+						<p>
+							Another great bar if you want a bigger selection of New Zealand’s craft beers. They also have delicious pizza to wash down the beer.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.780228,-41.294945,0.000000" data-zoom="17">
+						<h4>The Hawthorne Lounge</h4>
+						<div class="wrapper">
+						<p>
+							The setting is 1920s, the chairs are leather and the cocktails are flowing. Shot of tequila followed by a Dark n’ Stormy. You can’t go wrong.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.775131,-41.294418,0.000000" data-zoom="17">
+						<h4>Slow Boat Records</h4>
+						<div class="wrapper">
+						<p>
+							New Zealand’s longest running independent record store has its home on Cuba street in Wellington. They have a ton of records here and they also host local music acts from time to time.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.776108,-41.292446,0.000000" data-zoom="17">
+						<h4>Matterhorn</h4>
+						<div class="wrapper">
+						<p>
+							A Wellington food and drink institution with a great back yard, delicious gourmet cuisine and a great place for large groups of friends.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.776199,-41.292301,0.000000" data-zoom="17">
+						<h4>Mighty Mighty</h4>
+						<div class="wrapper">
+						<p>
+							This is a bar above the Matterhorn that we spent a lot of time in. They hold all sorts of wild events here from Burlesque life­drawing to concerts to messy eating contests. Or you could just come for the pints, palm trees and pinball.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.781174,-41.293415,0.000000" data-zoom="17">
+						<h4>Courtenay Place</h4>
+						<div class="wrapper">
+						<p>
+							Every city has an area like Courtney Place. You know, cheesy bars, lots of drunk people and a great place for a late night pub crawl.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Saturday</h3>
+				<ul>
+					<li data-geo="174.774139,-41.295967,0.000000" data-zoom="17">
+						<h4>Fidels Cafe</h4>
+						<div class="wrapper">
+						<p>
+							Another Cuban themed joint on Cuba street and the best brunch spot you could ask for after a night that ended somewhere on Courtney Place. This Is My City recommends the ‘Big Veggie Breakfast’.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.775558,-41.293415,0.000000" data-zoom="17">
+						<h4>Hunters &amp; Collectors</h4>
+						<div class="wrapper">
+						<p>
+							A Cuba Street vintage clothing store that may or may not be named after that 80’s Australian rock band.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.776199,-41.292301,0.000000" data-zoom="17">
+						<h4>Dr. Sketchy at Mighty Mighty</h4>
+						<div class="wrapper">
+						<p>
+							<a href="http://www.drsketchy.com/branch/wellington" target="_blank">Dr. Sketchy</a> is an international franchise that combines life­drawing, cabaret and afternoon drinks. In Wellington, it takes place at Mighty Mighty on the second Saturday of every month and is quite simply an awesome thing to do!
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<h3 data-bind="css: { on: selectedDay() === $element }">Sunday</h3>
+				<ul>
+					<li data-geo="174.817566,-41.316883,0.000000" data-zoom="16">
+						<h4>Mr. Bun’s Bakery &amp; Coffee Shop</h4>
+						<div class="wrapper">
+						<p>
+							If you happen to be going four wheel driving on the south side you may want to stop here and stock up on deliciously crispy fried chicken and chips.
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.716095,-41.361607,0.000000" data-zoom="15">
+						<h4>Four­wheel driving on the South Side</h4>
+						<div class="wrapper">
+						<p>
+							From the comfort of your jeep you will enjoy a ‘Devil’s Gate’, wonderful vistas, red volcanic rocks, a fur seal colony, river beds, beaches, vertical cliffs and much more. Spectacular!
+						</p>
+						</div>
+					</li>
+					<li data-geo="174.732147,-41.317722,0.000000" data-zoom="15">
+						<h4>The Brooklyn Windmill</h4>
+						<div class="wrapper">
+						<p>
+							It’s windy in Wellington and this means lots of windmills on the hills. This one, at the top of Brooklyn hill, is worth walking or driving up to because firstly, windmills are cool and secondly, you can see for miles in every direction from up here.
+						</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="close-button"></div>	
+			</div></div>
+
+		</li><!--
+--></ul>
+
+<div id="secondary-content" class="off" data-bind="css: { off: selectedSecondary() == null }">
+	<ul>
+		<li id="about" class="off" data-bind="css: { off: selectedSecondary() != $element }">
+
+			<h2>About the show</h2>
+
+			<div class="content cols">
+				<p>Ever dream of quitting your day job and taking the trip of a lifetime? Ever wish you could ditch the guidebook and go straight to where the locals go?</p>
+
+				<p>For each episode of This Is My City, Tim and Thomas find a local who is willing to show them what life is really like in Lisbon, Beirut, Beijing and five other global metropolises… Over the course of a madcap weekend, they film everything that transpires, no matter how dangerous, bizarre or borderline illegal.</p> 
+
+				<p>Tim Kafalas and Thomas Beug first met in New York in 2004. They bonded over a shared love for losing themselves in foreign lands. They were also both serious about filmmaking. Thomas, an Irishman, was a producer at Droga5, a Creativity Magazine Advertising Agency of the Year while Tim, American, worked as a video editor at MTV.</p> 
+
+				<p>This Is My City is a show about what cities mean to the people who live in them, brought to you in the most personal way. It’s not about seeing the sights; it’s about seeing the soul.</p>
+
+				<p>This is a self-funded, self-produced passion project. We’d like to sincerely thank everyone who helped out along the way to make it all possible. We hope you enjoy it.</p>
+
+				<p>To see the original Reykjavik pilot <a href="http://vimeo.com/4943150" target="_blank">click here.</a></p>
+
+				<p class="credit">Site design by <a href="http://aleksgryczon.com" target="_blank">aleks gryczon</a> and Ed Hicks</p>
+
+			</div>
+		</li>
+
+		<li id="contact" class="off" data-bind="css: { off: selectedSecondary() != $element }">
+
+			<h2>hello@thisismycity.tv</h2>
+
+			<div class="content">
+				<h3>Tim</h3>
+
+				<a href="http://instagram.com/timkaf" target="_blank">
+					<img src="images/instagram.svg" alt="Instagram">timkaf
+				</a>
+
+				<h3>Thomas</h3>
+				<a href="http://twitter.com/bigbeug" target="_blank">
+					<img src="images/twitter.svg" alt="Twitter">@bigbeug
+				</a>
+				<a href="http://instagram.com/bigbeug" target="_blank">
+					<img src="images/instagram.svg" alt="Instagram">bigbeug
+				</a>
+
+			</div>
+		</li>
+
+		<li id="press" class="off" data-bind="css: { off: selectedSecondary() != $element }">
+
+			<h2>Selected Articles</h2>
+
+			<div class="content">
+
+				<a href="http://travel.nytimes.com/2012/02/12/travel/q-and-a-with-thomas-beug-and-tim-kafalas.html?_r=0" target="_blank">
+					<img src="images/nytimes-logo.svg" alt="New York Times">
+					Q&amp;A With Thomas Beug and Tim Kafalas
+				</a>
+
+				<a href="http://www.theguardian.com/travel/2009/oct/23/this-is-my-city-video" target="_blank">
+					<img src="images/the-guardian-logo.svg" alt="The Guardian">
+					 New Travel Show aims to rip up the guidebooks
+				</a>
+
+				<a href="http://matadornetwork.com/notebook/this-is-my-city-is-looking-for-locals/" target="_blank">
+					<img src="images/matador-logo.png" alt="Matador Network">
+					Revolutionizing the concept of travel media
+				</a>
+
+				<a href="http://www.glamour.com/sex-love-life/blogs/smitten/2010/12/afternoon-eye-candy-the-boys-f.html" target="_blank">
+					<img src="images/glamour-logo.svg" alt="Glamour">
+					Afternoon Eye Candy
+				</a>
+
+				<a href="http://projectwander.vivamacro.com/2009/10/24/this-is-my-city-makes-travel-shows-fun-again/" target="_blank">
+					<img src="images/project-wander-logo.png" alt="Project Wander">
+					This Is My City makes travel shows fun again
+				</a>
+
+				<a href="https://www.chicagoideas.com/videos/119" target="_blank">
+					<img src="images/chicago-ideas-week-logo.png" alt="Chicago Idea Week">
+					 Learning From Locals
+				</a>
+
+				<a class="presskit" href="http://www.thisismycity.tv/Thomas/presskit.zip" target="_blank">Download a Press Kit here </a>
+
+			</div>
+		</li>
+
+		<li id="mailing" class="off" data-bind="css: { off: selectedSecondary() != $element }">
+
+			<h2>Mailing List</h2>
+
+			<div class="content">
+
+				<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+				<form action="http://thisismycity.us6.list-manage.com/subscribe/post?u=9c9b9a488e6d4da3db7899869&amp;id=8b6ba87ed6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+					<h3>To keep up to date with This Is My City news and updates, sign up to our mailing list here. You’ll hear from us infrequently, we promise.</h3>
+				<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+				<div class="mc-field-group">
+					<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+				</label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				</div>
+				<div class="mc-field-group">
+					<label for="mce-FNAME">First Name </label>
+					<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+				</div>
+				<div class="mc-field-group">
+					<label for="mce-LNAME">Last Name </label>
+					<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+				</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>	<div class="clear"><input type="submit" value="Subscribe to list" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
+
+			</div>
+		</li>
+
+	</ul>
+	<div class="close-button" style="display:block"></div>	
+</div>
+
+<a id="home-button" href="#ep_trailer">Home</a>
+<div id="nav">
+	<ul id="episodes-nav">
+		<li><!-- spacer --></li>
+		<li data-bind="css: { active: epId() == 'ep_trailer' }"><a href="#ep_trailer">Trailer</a><div class="bg"></div></li>
+		<li data-bind="css: { active: epId() == 'ep_1' }"><a href="#ep_1">Lisbon</a><div class="bg"></div></li>
+		<li data-bind="css: { active: epId() == 'ep_2' }"><a href="#ep_2">Berlin</a><div class="bg"></div></li>
+		<li data-bind="css: { active: epId() == 'ep_3' }"><a href="#ep_3">Belgrade</a><div class="bg"></div></li>
+		<li data-bind="css: { active: epId() == 'ep_4' }"><a href="#ep_4">Beirut</a><div class="bg"></div></li>
+		<li data-bind="css: { active: epId() == 'ep_5' }"><a href="#ep_5">Beijing</a><div class="bg"></div></li>
+		<li data-bind="css: { active: epId() == 'ep_6' }"><a href="#ep_6">Tokyo</a><div class="bg"></div></li>
+		<li data-bind="css: { active: epId() == 'ep_7' }"><a href="#ep_7">Melbourne</a><div class="bg"></div></li>
+		<li data-bind="css: { active: epId() == 'ep_8' }"><a href="#ep_8">Wellington</a><div class="bg"></div></li>
+	</ul>
+	<ul id="top-nav">
+		<li><a href="#about" data-bind="css: { on: secondaryId() == 'about' }">About</a></li>
+		<li><a href="#contact" data-bind="css: { on: secondaryId() == 'contact' }">Contact</a></li>
+		<li><a href="#press" data-bind="css: { on: secondaryId() == 'press' }">Press</a></li>
+		<li><a href="#mailing" data-bind="css: { on: secondaryId() == 'mailing' }">Mailing List</a></li>
+		<li>
+			<a class="facebook" href="https://www.facebook.com/ThisIsMyCity" target="_blank">Facebook</a>
+			<a class="twitter" href="https://twitter.com/ThisismyCityTV" target="_blank">Twitter</a>
+			<a class="instagram" href="http://instagram.com/thisismycitytv" target="_blank">Instagram</a>
+			<a class="youtube" href="http://www.youtube.com/thisismycitytv" target="_blank">YouTube</a>
+		</li>
+	</ul>
+	<div class="close-button"></div>
+</div>
+
+<div id="nav-toggle">Toggle Nav</div>
+
+<!-- episode controls -->
+<ul id="episode-side-nav">
+	<li id="map-button" data-bind="text: selectedSide() == 'map' ? 'Episode' : 'Map'">Map</li>
+	<li id="bios-button" data-bind="css: { on: selectedSide() == 'bios'}, visible: selectedSide() != 'map'">Bios</li>
+	<li id="music-button" data-bind="css: { on: selectedSide() == 'music'}, visible: selectedSide() != 'map'">Music</li>
+</ul>
+<div id="previous-episode" data-bind="visible: selectedSide() != 'map'">Previous Episode</div>
+<div id="next-episode" data-bind="visible: selectedSide() != 'map'">Next Episode</div>
+<div id="stop-episode" class="close-button" data-bind="visible: playingVideoId() != null" style="display:none"></div>	
+
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDp8fesR63Bnw4RyEImiaZzVh6Q3nOnXUE"></script>
+<script src="scripts/app.min.js"></script>
+<script src="http://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4989793-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
